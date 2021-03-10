@@ -1,0 +1,6 @@
+package PhoneBookManager_ex;
+
+public enum INIT_MENU {
+	INPUT,SEARCH,DELETE,EXIT;
+
+}

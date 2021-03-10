@@ -1,0 +1,34 @@
+package PhoneBookManager_ex;
+
+import java.util.Scanner;
+
+public class PhoneBookVer05 {
+
+	public static void main(String[] args) {
+		
+		PhoneBookManager manager = PhoneBookManager.createManagerInst(); // ΩÃ±€≈Ê∞°¡Æ¥Ÿ æ∏
+		
+		int choice;
+		
+		while(true) {
+			MenuViewer.showMenu();
+			choice = MenuViewer.keyboard.nextInt();
+			MenuViewer.keyboard.nextLine();
+			
+			switch(choice) {
+			 case INIT_MENU.INPUT:
+				 manager.inputData();
+				 break;
+			 case INIT_MENU.SEARCH:
+				 manager.searchData();
+				 break;
+			 case INIT_MENU.DELETE:
+				 manager.deleteData();
+				 break;
+			}
+		}
+		
+
+	}
+
+}

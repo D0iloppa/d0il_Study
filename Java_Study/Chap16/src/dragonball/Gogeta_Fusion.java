@@ -1,0 +1,54 @@
+package dragonball;
+
+public class Gogeta_Fusion implements Songoku, Vegeta {
+	
+	String name;
+	
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return name;
+	}
+
+	@Override
+	public void setName(String name) {
+		// TODO Auto-generated method stub
+		this.name = name;
+		
+	}
+
+	public void galick_Gun() {
+		// TODO Auto-generated method stub
+		System.out.println("갤릭파~");
+
+	}
+
+	public void final_Flash() {
+		// TODO Auto-generated method stub
+		System.out.println("파이널~플래시!");
+
+	}
+
+	public void kamehameha() {
+		// TODO Auto-generated method stub
+		System.out.println("에");
+		System.out.println("네");
+		System.out.println("르~");
+		System.out.println("기----");
+		System.out.println("파!!!!");
+
+	}
+
+	public void teleport() {
+		// TODO Auto-generated method stub
+		System.out.println("피슝(순간이동됨)");
+
+	}
+	
+	public void final_Kamehameha() {
+		System.out.println("파이널 에네르기파 (끝)");
+		
+	}
+
+}

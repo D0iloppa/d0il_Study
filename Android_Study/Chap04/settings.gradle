@@ -1,0 +1,9 @@
+include ':proj4_2'
+include ':selfcheck3'
+include ':simplecalc'
+include ':selfcheck2'
+include ':selfcheck'
+include ':myadd'
+include ':custombutton'
+include ':app'
+rootProject.name = "Chap04"

@@ -1,0 +1,12 @@
+package PhoneBookManager_ex;
+
+import java.util.Scanner;
+
+public class MenuViewer {
+	
+	public static Scanner keyboard = new Scanner(System.in); // 스캐너 static 선언 앞으로 이 객체만 씀
+	
+	
+	
+
+}

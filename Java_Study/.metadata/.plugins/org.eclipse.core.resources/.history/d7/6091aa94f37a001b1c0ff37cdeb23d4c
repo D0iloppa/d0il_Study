@@ -1,0 +1,14 @@
+package PhoneBookManager_ex;
+
+public class PhoneInfo {
+	
+	String name;
+	String phoneNumber;
+	
+	public PhoneInfo(String name, String num)
+	{
+		this.name = name;
+		this.phoneNumber = num;
+	}
+
+}

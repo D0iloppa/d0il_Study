@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txtX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="X좌표"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/edtX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/txtX"
+        android:layout_toRightOf="@+id/txtX"
+        android:ems="10"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/txtY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtX"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="Y좌표"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtX"
+        android:layout_toEndOf="@+id/txtY"
+        android:layout_toRightOf="@+id/txtY"
+        android:textSize="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <FrameLayout
+        android:id="@+id/touch_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edtY"
+        android:layout_above="@id/edtCount"
+        android:background="#0ff"
+        >
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="터치한 횟수" />
+
+    <EditText
+        android:id="@+id/edtCount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtCount"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/edtCount"
+        android:text="닫기"
+        android:textSize="20dp" />
+
+
+
+</RelativeLayout>

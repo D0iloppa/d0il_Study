@@ -1,0 +1,11 @@
+include ':font_ex'
+include ':pagesliding_ex'
+include ':webview_ex'
+include ':viewfliper_ex'
+include ':ratingbar_ex'
+include ':animation_scale'
+include ':seekbar_ex'
+include ':progress_bar'
+include ':self_check'
+include ':app'
+rootProject.name = "Chap06"

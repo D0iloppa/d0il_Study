@@ -1,0 +1,21 @@
+package PhoneBookManager_ex;
+
+public class PhoneCompanyInfo extends PhoneInfo {
+	String company;
+
+	public PhoneCompanyInfo(String name, String num, String company) {
+		super(name, num);
+		this.company = company;
+	}
+
+	
+	@Override
+	public void showPhoneInfo() {
+		// TODO Auto-generated method stub
+		super.showPhoneInfo();
+		System.out.println("company: " + company);
+	}
+	
+	
+
+}

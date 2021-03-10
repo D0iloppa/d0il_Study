@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="hyundai.Engine"/>
+    <fullyQualifiedTypeName name="hankook.SnowTire"/>
+    <fullyQualifiedTypeName name="package2.NumberPrinter"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="lecture.Enum_Ex.Week"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
+    <fullyQualifiedTypeName name="innerclass.OutterClass.InnerClass"/>
+    <fullyQualifiedTypeName name="innerclass.A.B"/>
+    <fullyQualifiedTypeName name="innerclass.A.C"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+</qualifiedTypeNameHistroy>

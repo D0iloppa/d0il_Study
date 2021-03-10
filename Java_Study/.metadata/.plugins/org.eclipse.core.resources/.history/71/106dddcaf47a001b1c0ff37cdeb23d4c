@@ -1,0 +1,11 @@
+package PhoneBookManager_ex;
+
+public class PhoneBookManager {
+	final int MAX_CNT = 100;
+	
+	PhoneInfo[] infoStorage = new PhoneInfo[MAX_CNT]; // 100칸의 핸드폰 정보를 담을 수 있는 정적배열 선언
+	int curCnt = 0; // 처음시작은 0
+	
+	static PhoneBookManager inst=null;
+
+}

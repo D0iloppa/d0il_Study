@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff9999"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSave"
+        android:text="저장"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="#4b0082"
+        />
+
+    <Button
+        android:id="@+id/btn_Close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:text="닫기"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_Today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘날짜"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="#4b0082" />
+
+</LinearLayout>

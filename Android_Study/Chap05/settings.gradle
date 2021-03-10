@@ -1,0 +1,6 @@
+include ':scroll_image'
+include ':framelayout_ex'
+include ':self_check_calc'
+include ':self_check_relativelayout'
+include ':app'
+rootProject.name = "Chap05"

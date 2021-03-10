@@ -1,0 +1,12 @@
+package database_ex;
+
+public interface DataAccessObject {	
+	
+	public final String db_Type;
+	
+	public void select(); // 검색
+	public void insert(); // 삽입
+	public void update(); // 수정
+	public void delete(); // 삭제
+
+}

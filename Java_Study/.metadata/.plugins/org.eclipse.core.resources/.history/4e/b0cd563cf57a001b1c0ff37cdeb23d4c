@@ -1,0 +1,8 @@
+package PhoneBookManager_ex;
+
+public class MenuViewer {
+	
+	public static Scanner keyboard = new Scanner(System.in); // 스캐너 선언
+	
+
+}

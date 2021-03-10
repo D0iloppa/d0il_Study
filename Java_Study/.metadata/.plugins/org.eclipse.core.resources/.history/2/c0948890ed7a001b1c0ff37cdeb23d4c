@@ -1,0 +1,22 @@
+package database_ex;
+
+public class DaoExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		dbWork(new OracleDao());
+		dbWork(new MySqlDao());
+		
+
+	}
+
+	private static void dbWork(OracleDao oracleDao) {
+		// TODO Auto-generated method stub
+		dao.select();
+		dao.insert();
+		dao.update();
+		dao.delete();		
+	}
+
+}

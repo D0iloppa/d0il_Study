@@ -1,0 +1,75 @@
+package PhoneBookManager_ex;
+
+public class PhoneBookManager {
+	final int MAX_CNT = 100;
+	
+	PhoneInfo[] infoStorage = new PhoneInfo[MAX_CNT]; // 100칸의 핸드폰 정보를 담을 수 있는 정적배열 선언
+	int curCnt = 0; // 처음시작은 0
+	
+	static PhoneBookManager inst=null; // 싱글톤으로 활용, 앞으로 객체생성 하지 않아도 됨
+	
+	public static PhoneBookManager createManagerInst() {
+		if(inst==null) inst = new PhoneBookManager(); // 싱글톤 객체 생성 
+		return inst;
+	}
+	
+	private PhoneBookManager() {} // 싱글톤으로 쓰기 위해 생성자를 잠궈둠
+	
+	private PhoneInfo readFriendInfo() {
+		System.out.print("이름: ");
+		String name = MenuViewer.keyboard.nextLine();
+		System.out.print("전화번호: ");
+		String phone = MenuViewer.keyboard.nextLine();
+		return new PhoneInfo(name,phone);
+	}
+	
+	private PhoneInfo readUnivFriendInfo() {
+		System.out.print("이름: ");
+		String name = MenuViewer.keyboard.nextLine();
+		System.out.print("전화번호: ");
+		String phone = MenuViewer.keyboard.nextLine();
+		System.out.print("전공: ");
+		String major = MenuViewer.keyboard.nextLine();
+		System.out.print("학번: ");
+		int year = MenuViewer.keyboard.nextInt();
+		return new PhoneUnivInfo(name,phone,major,year);
+	}
+	
+	private PhoneInfo readCompanyFriendInfo() {
+		System.out.print("이름: ");
+		String name = MenuViewer.keyboard.nextLine();
+		System.out.print("전화번호: ");
+		String phone = MenuViewer.keyboard.nextLine();
+		System.out.print("회사: ");
+		String company = MenuViewer.keyboard.nextLine();
+		
+		return new PhoneCompanyInfo(name,phone,company);
+	}
+	
+	public void inputData() {
+		System.out.println("데이터 입력을 시작합니다..");
+		System.out.println("1. 일반, 2. 대학, 3.회사");
+		System.out.println("선택>> ");
+		int choice = MenuViewer.keyboard.nextInt();
+		MenuViewer.keyboard.nextLine();
+		PhoneInfo info = null;
+		
+		switch(choice) {
+		 case INPUT_SELECT.NORMAL:
+			 info = readFriendInfo();
+			 break;
+		 case INPUT_SELECT.UNIV:
+			 info = readUnivFriendInfo();
+		 case INPUT_SELECT.COMPANY:
+			 info = readCompanyFriendInfo();
+			 break;
+		  default :
+			  System.out.println("잘못 입력하셨습니다.");
+			  return;
+		}
+		
+		infoStorage[curCnt++]=info; // 입력받은 객체를 배열에 추가, 번호증가
+		System.out.println("데이터 입력이 완료되었습니다. \n");		
+	}
+
+}

@@ -1,0 +1,41 @@
+package random_lotto;
+
+import java.util.Random;
+
+public class Lotto_Num_MakerV0 {
+	
+	    public static void main(String[] args) {
+	    	
+	    	Random_Lotto num_Maker = new Random_Lotto();
+	    	Inc_Sort sort = Inc_Sort.getInstance();
+	 
+	        
+	        int LottoNumber[] = new int[6]; // 배열크기 정의
+	        
+	        LottoNumber = num_Maker.raw_Lotto_Num();
+	
+	        final int MIN = 1 , MAX = 45;
+	 
+	
+	        for (int i = 0; i < LottoNumber.length; i++) {
+	        	for (int j = 0; j < i; j++) {
+
+	                if (LottoNumber[i] < LottoNumber[j]) {
+	                    int LottoNumberTemp = LottoNumber[i];
+	                    LottoNumber[i] = LottoNumber[j];
+	                    LottoNumber[j] = LottoNumberTemp;
+	                }
+	 
+	            }
+	 
+	        }
+	        
+	        System.out.println();
+	 
+	        // 위에서 정리된 LottoNumber 배열을 다시 마지막으로 정리
+	        for (int i = 0; i < LottoNumber.length; i++)
+	            System.out.println("LOTTO NUMBER  ------->               " + LottoNumber[i]);
+	       
+	    }
+
+}

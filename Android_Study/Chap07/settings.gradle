@@ -1,0 +1,6 @@
+include ':same_package'
+include ':implicit_ex'
+include ':self_check2'
+include ':simple_cal'
+include ':intent_ex'
+rootProject.name = "Chap07"
