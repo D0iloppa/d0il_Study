@@ -1,5 +1,0 @@
-package database_ex;
-
-public interface DataAccessObject {
-
-}

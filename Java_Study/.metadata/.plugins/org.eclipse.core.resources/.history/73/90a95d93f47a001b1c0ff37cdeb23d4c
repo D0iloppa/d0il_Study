@@ -1,9 +1,0 @@
-package PhoneBookManager_ex;
-
-public class PhoneBookManager {
-	final int MAX_CNT = 100;
-	
-	PhoneInfo[] infoStorage = new PhoneInfo[MAX_CNT];
-	int curCnt = 0;
-
-}
