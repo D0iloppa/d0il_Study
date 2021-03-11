@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i("Lifecycle","onDestroy 호출됨");
-        SharedPreferences sharedPreferences = getSharedPreferences();
+        SharedPreferences sharedPreferences = getSharedPreferences("TEST",MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.clear();
     }
