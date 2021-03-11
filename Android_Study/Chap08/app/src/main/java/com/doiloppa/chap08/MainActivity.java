@@ -4,13 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    int score=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+    public void onConfigurationChanged(@NonNull Configuration newConfig) { // 가로세로모드 변경
         super.onConfigurationChanged(newConfig);
         Log.i("Lifecycle","onConfigurationChanged 호출됨");
         setContentView(R.layout.activity_main);
@@ -63,13 +67,29 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         Log.i("Lifecycle","onPause 호출됨");
+        saveData();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         Log.i("Lifecycle","onResume 호출됨");
+        if(score!=0) restoreData();
 
+    }
+
+    public void saveData(){
+        SharedPreferences sharedPreferences = getSharedPreferences("TEST",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("Score",10000);
+        editor.putString("message","저는 데이터입니다.");
+        editor.commit();
+    }
+
+    private void restoreData(){
+        SharedPreferences sharedPreferences = getSharedPreferences("TEST",MODE_PRIVATE);
+        score = sharedPreferences.getInt("Score",0);
+        Toast.makeText(getApplicationContext(), ""+score, Toast.LENGTH_SHORT).show();
     }
 
 }
