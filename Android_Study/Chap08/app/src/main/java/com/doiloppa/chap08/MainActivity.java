@@ -1,6 +1,7 @@
 package com.doiloppa.chap08;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,11 +11,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     int score=0;
+    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),NewActivity.class)); //일회용을 쓴다. 다른 클래스 이기때문에 this X
             }
         });
+
+        editText = findViewById(R.id.editTextTextPersonName);
+
+        if(savedInstanceState!=null)
+            editText.setText(savedInstanceState.getString("Data"));
     }
 
     @Override
@@ -95,4 +103,10 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), ""+score, Toast.LENGTH_SHORT).show();
     }
 
+    @Override
+    protected void onSaveInstanceState(@Nullable Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.i("LifeCycle","onSaveInstanceState 호출됨");
+        outState.putString("Data",editText.getText().toString());
+    }
 }
