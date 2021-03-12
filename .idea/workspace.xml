@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef316eb-23da-4fd0-b25e-29a821a39a55" name="Default Changelist" comment="" />
+    <list default="true" id="cef316eb-23da-4fd0-b25e-29a821a39a55" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +32,7 @@
   </component>
   <component name="ProjectId" id="1pY0Wc6wQjHyVsBJjgUtxDbx5q2" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -41,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Android_Study/Chap08" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Android_Study/Mission_2th/app" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="SvnConfiguration">
@@ -70,22 +73,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="162" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615348436861">
-      <screen x="0" y="0" width="1600" height="870" />
+    <state x="162" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615429044752">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state x="162" y="92" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1615429044752" />
     <state x="162" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.870@0.0.1600.870" timestamp="1615348436861" />
     <state x="92" y="92" width="1416" height="686" key="AVDManager" timestamp="1615348451510">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="92" y="92" width="1416" height="686" key="AVDManager/0.0.1600.870@0.0.1600.870" timestamp="1615348451510" />
-    <state x="146" y="192" key="FileChooserDialogImpl" timestamp="1615348449485">
-      <screen x="0" y="0" width="1600" height="870" />
+    <state x="146" y="190" key="FileChooserDialogImpl" timestamp="1615515001137">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state x="146" y="190" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1615515001137" />
     <state x="146" y="192" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1615348449485" />
-    <state x="392" y="168" key="Vcs.Push.Dialog.v2" timestamp="1615348412754">
-      <screen x="0" y="0" width="1600" height="870" />
+    <state x="392" y="166" key="Vcs.Push.Dialog.v2" timestamp="1615428823284">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state x="392" y="166" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1615428823284" />
     <state x="392" y="168" key="Vcs.Push.Dialog.v2/0.0.1600.870@0.0.1600.870" timestamp="1615348412754" />
+    <state x="605" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615428796251">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1615428796251" />
     <state x="591" y="372" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1615347564777">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
