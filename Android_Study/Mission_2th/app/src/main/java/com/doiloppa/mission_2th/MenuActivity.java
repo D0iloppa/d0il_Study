@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ public class MenuActivity extends AppCompatActivity {
 
         String id = intent.getStringExtra("id");
         Toast.makeText(getApplicationContext(), "사용자 이름 : " + id + "님이 로그인하셨습니다.", Toast.LENGTH_SHORT).show();
+        Log.i("id",id);
 
 
         Button btnCustomer = findViewById(R.id.btnCustomer);
