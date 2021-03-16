@@ -14,5 +14,19 @@
         android:text="Activity A3"
         android:textSize="25dp" />
 
+    <Button
+        android:id="@+id/btn_CallA3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCallA3"
+        android:text="call A3 activity" />
+
+    <TextView
+        android:id="@+id/txtA3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hi"
+        />
+
 
 </LinearLayout>
