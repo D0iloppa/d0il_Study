@@ -24,6 +24,12 @@ public class ActivityA2 extends AppCompatActivity {
 //        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
         intent.putExtra("caller","A2에서 보냄");
         startActivity(intent);
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        textView.setText(intent.getStringExtra("caller"));
 
     }
 }

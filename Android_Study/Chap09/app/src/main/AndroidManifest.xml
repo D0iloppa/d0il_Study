@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Chap09">
-        <activity android:name=".ActivityA3" android:taskAffinity="com.A"/>
-        <activity android:name=".ActivityA2" android:taskAffinity="com.B"/>
-        <activity android:name=".ActivityA1" android:taskAffinity="com.A">
+        <activity android:name=".ActivityA3" android:launchMode="singleTask"/>
+        <activity android:name=".ActivityA2" />
+        <activity android:name=".ActivityA1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

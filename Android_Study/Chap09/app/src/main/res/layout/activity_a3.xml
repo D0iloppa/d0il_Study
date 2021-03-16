@@ -18,8 +18,8 @@
         android:id="@+id/btn_CallA3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onCallA3"
-        android:text="call A3 activity" />
+        android:onClick="onCallA2"
+        android:text="call A2 activity" />
 
     <TextView
         android:id="@+id/txtA3"
