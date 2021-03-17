@@ -25,6 +25,7 @@ public class ActivityA1 extends AppCompatActivity {
     public void onCallA2(View view) {
         Intent intent = new Intent(getApplicationContext(),ActivityA2.class);
 //        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
         intent.putExtra("caller","A1에서 보냄");
         startActivity(intent);
 
