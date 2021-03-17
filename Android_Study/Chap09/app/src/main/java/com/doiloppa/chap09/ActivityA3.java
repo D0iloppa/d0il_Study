@@ -23,7 +23,7 @@ public class ActivityA3 extends AppCompatActivity {
     }
 
     public void onCallA2(View view) { // A2로 이동
-        Intent intent = new Intent(getApplicationContext(),ActivityA2.class);
+        Intent intent = new Intent(getApplicationContext(),ActivityA3.class);
         intent.putExtra("caller","A3에서 보냄(A2 액티비티를 다시 호출)");
         startActivity(intent);
 
