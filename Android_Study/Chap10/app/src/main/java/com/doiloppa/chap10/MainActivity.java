@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.GestureDetector;
+import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ScrollView;
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     ScrollView scrollView;
     final int SWIPE_MIN_DISTANCE = 120; // SWIPE를 인식하는 가장 작은 거리
     final int SWIPE_VELOCITY = 2000; // SWIPE인식 최소속도(ms)
+    long initTime = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,7 +110,31 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
     } // onCreate 끝
+
+
+
+//    @Override
+//    public boolean onKeyDown(int keyCode, KeyEvent event) {
+//        if (keyCode == KeyEvent.KEYCODE_BACK) {
+//            if(System.currentTimeMillis()-initTime>3000){
+//                Toast.makeText(getApplicationContext(), "종료하려면 한번 더 누르세요", Toast.LENGTH_SHORT).show();
+//                initTime=System.currentTimeMillis();
+//            }else{
+//                finish();
+//            }
+//        }
+//        return true;
+//    }
+
+
+    @Override
+    public void onBackPressed() {
+        if(System.currentTimeMillis()-initTime>3000){
+            Toast.makeText(getApplicationContext(), "종료하려면 한번 더 누르세요", Toast.LENGTH_SHORT).show();
+            initTime=System.currentTimeMillis();
+        }else{
+            finish();
+        }
+    }
 }
