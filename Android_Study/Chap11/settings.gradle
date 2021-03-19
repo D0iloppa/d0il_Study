@@ -1,0 +1,3 @@
+include ':viewpager_ex'
+include ':app'
+rootProject.name = "Chap11"
