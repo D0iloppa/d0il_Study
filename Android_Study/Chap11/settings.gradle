@@ -1,3 +1,7 @@
+include ':bindservice'
+include ':intent_service_ex'
+include ':music_service'
+include ':service_ex'
 include ':viewpager_ex'
 include ':app'
 rootProject.name = "Chap11"
