@@ -1,3 +1,4 @@
+include ':systembroadcastreciever_ex'
 include ':broadcastreciver_sms'
 include ':broadcastreceiver_ex'
 include ':bindservice'
