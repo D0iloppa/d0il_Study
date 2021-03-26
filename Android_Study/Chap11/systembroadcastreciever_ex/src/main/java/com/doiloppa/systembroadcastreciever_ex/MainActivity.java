@@ -101,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     }
 
     public void addListItem(String msg){
@@ -148,10 +147,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
-
-
-
-
 
 
 
