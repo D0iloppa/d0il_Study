@@ -1,3 +1,7 @@
+include ':mission'
+include ':menu_ex'
+include ':dialog_ex'
+include ':keyboardcontrol_ex'
 include ':notification_ex'
 include ':systembroadcastreciever_ex'
 include ':broadcastreciver_sms'

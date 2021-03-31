@@ -15,7 +15,11 @@
             <option value="$PROJECT_DIR$/bindservice" />
             <option value="$PROJECT_DIR$/broadcastreceiver_ex" />
             <option value="$PROJECT_DIR$/broadcastreciver_sms" />
+            <option value="$PROJECT_DIR$/dialog_ex" />
             <option value="$PROJECT_DIR$/intent_service_ex" />
+            <option value="$PROJECT_DIR$/keyboardcontrol_ex" />
+            <option value="$PROJECT_DIR$/menu_ex" />
+            <option value="$PROJECT_DIR$/mission" />
             <option value="$PROJECT_DIR$/music_service" />
             <option value="$PROJECT_DIR$/notification_ex" />
             <option value="$PROJECT_DIR$/service_ex" />

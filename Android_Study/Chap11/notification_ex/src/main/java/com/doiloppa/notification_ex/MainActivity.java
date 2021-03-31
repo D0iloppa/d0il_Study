@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     NotificationCompat.Builder builder;
 
 
-    // 알림과 관련있는 버튼 7개 있음
+    // 알림을 확인할 수 있는 확인용 버튼 7개 만들었다.
     Button basic_Btn, bigPicture_Btn, bigText_Btn, inbox_Btn, progress_Btn, headsUp_Btn, message_Btn;
 
 
@@ -60,21 +60,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) { // 오레오 버전 이상
-            String channelId = "one-channel";
-            String channelName = "My Channel";
-            String channelDescription = "My Channel One Description";
+            String channelId = "one-channel"; // 채널 아이디
+            String channelName = "My Channel"; // 채널 이름
+            String channelDescription = "My Channel One Description"; // 채널 설명
             NotificationChannel channel = null;
-            if(v==headsUp_Btn)
+            if(v==headsUp_Btn) // 중요한 내용은 헤즈업으로 띄워준다. (중요도를 HIGH로 줌)
                 channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_HIGH);
-            else
+            else // 이를 제외하고는 디폴트값
                 channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_DEFAULT);
 
             channel.setDescription(channelDescription);
-            manager.createNotificationChannel(channel);
-            builder = new NotificationCompat.Builder(this, channelId);
+            manager.createNotificationChannel(channel); // 매니저와 채널 연결
+            builder = new NotificationCompat.Builder(this, channelId); // 빌더 생성
 
         } else // 오레오 버전 이하
-               // 오레오 버전 이하에서는 채널을 모른다.
+               // 오레오 버전 이하에서는 채널개념이 없다.
             builder = new NotificationCompat.Builder(this);
 
 
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         builder.setDefaults(Notification.DEFAULT_ALL|Notification.DEFAULT_LIGHTS|Notification.DEFAULT_SOUND);
         builder.setAutoCancel(true);
 
-
+        // 펜딩인텐트
         Intent intent = new Intent(this,AnotherActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this,10,intent,PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(pendingIntent);
