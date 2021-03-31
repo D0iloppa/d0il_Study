@@ -160,9 +160,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             builder.setStyle(style);
         }
-
-
-
         manager.notify(1000,builder.build());; //리퀘스트코드, 빌드 요청 => 알림
 
 
