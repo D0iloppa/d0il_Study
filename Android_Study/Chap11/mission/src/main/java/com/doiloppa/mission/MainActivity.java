@@ -39,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("입력한 글자 : " + txt);
         }
 
-        receiverTest = new ReceiverTest(); // 브로드캐스트 리시버 인스턴스화
+        receiver = new MyReceiver(); // 브로드캐스트 리시버 인스턴스화
         IntentFilter filter = new IntentFilter(); // 필터 생성
-        filter.addAction(MyReceiver.MY_ACTION);
-        registerReceiver(receiverTest,filter); // 리시버 등록
+        filter.addAction(receiver.MY_ACTION);
+        registerReceiver(receiver,filter); // 리시버 등록
 
 
         Button btn = findViewById(R.id.btn);
@@ -63,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     class MyReceiver extends BroadcastReceiver{
+
+
+        String MY_ACTION = "android.action.MY_ACTION";
 
         
 
