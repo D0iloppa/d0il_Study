@@ -26,14 +26,16 @@ public class TextService extends Service {
         // 메인 액티비티로부터 메시지를 받음
         Log.i("test","메인액티비티로부터 보낸 메시지를 서비스가 받음");
 
-//        intent = new Intent(MyReceiver.MY_ACTION);
-        intent.setAction(MyReceiver.MY_ACTION);
+        intent = new Intent("android.action.MY_ACTION");
+        intent.setAction("android.action.MY_ACTION");
         intent.putExtra("txt_From_Service", txt);
 
 
-        Log.i("test","서비스에서 리시버로 전송");
+
 
         sendBroadcast(intent);
+
+        Log.i("test","서비스에서 리시버로 전송");
 
         return super.onStartCommand(intent, flags, startId);
     }

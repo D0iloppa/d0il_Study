@@ -33,11 +33,6 @@ public class MainActivity extends AppCompatActivity {
         editText = findViewById(R.id.edt);
         textView = findViewById(R.id.text);
 
-        if( (intent = getIntent()) != null ){
-            String txt = intent.getStringExtra("txt_From_Receiver");
-//                Log.i("test","리시버가 보낸 메시지를 액티비티가 받음");
-                textView.setText("입력한 글자 : " + txt);
-        }
 
         receiver = new MyReceiver(); // 브로드캐스트 리시버 인스턴스화
         IntentFilter filter = new IntentFilter(); // 필터 생성
@@ -62,17 +57,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // 리시버 클래스 생성
     class MyReceiver extends BroadcastReceiver{
 
 
         String MY_ACTION = "android.action.MY_ACTION";
 
-        
-
+        //
         @Override
         public void onReceive(Context context, Intent intent) {
+            Log.i("test","리시버 브로드캐스트 수신");
             String txt = intent.getStringExtra("txt_From_Service");
-            textView.setText(txt);
+            textView.setText("입력한 글자 : " + txt);
 
         }
     }
