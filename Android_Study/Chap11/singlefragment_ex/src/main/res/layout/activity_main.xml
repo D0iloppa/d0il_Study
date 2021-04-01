@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_Main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onSelect"
+            android:layout_margin="10dp"
+            android:text="메인 프레그먼트"/>
+        <Button
+            android:id="@+id/btn_Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:onClick="onSelect"
+            android:text="메뉴 프레그먼트"/>
+
+    </LinearLayout>
+
+<!--    프래그먼트를 담아주는 컨테이너 역할을 하는 레이아웃 -->
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--        추후 인플레이션 해줘야한다-->
+       <!-- <fragment
+            android:id="@+id/mainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.doiloppa.singlefragment_ex.MainFragment"/>
+-->
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

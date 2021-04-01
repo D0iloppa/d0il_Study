@@ -1,3 +1,4 @@
+include ':singlefragment_ex'
 include ':playmusic_service'
 include ':mission'
 include ':menu_ex'
