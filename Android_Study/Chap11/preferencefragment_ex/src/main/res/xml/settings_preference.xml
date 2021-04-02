@@ -43,7 +43,7 @@
             android:title="Another Activity 설정"
             android:summary="그 외 액티비티 설정">
             <intent android:targetPackage="com.doiloppa.preferencefragment_ex"
-                android:targetClass="com.doiloppa.preferencefragment_ex.AnotherActivity"/>
+                android:targetClass="com.doiloppa.preferencefragment_ex.MainActivity2"/>
         </PreferenceScreen>
 
 
