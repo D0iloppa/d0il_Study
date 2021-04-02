@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--카테고리로 묶어준다.-->
+    <PreferenceCategory android:title="메시지 알림 카테고리">
+
+        <SwitchPreference
+            android:key="message"
+            android:title="메시지 알림" />
+        <PreferenceScreen
+            android:key="keyword_screen"
+            android:summary="사용안함"
+            android:title="키워드 알림">
+            <!--기본적으로는 안보이지만, 이 항목이 클릭되면 하위 항목이 보여짐-->
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="keyword"
+                android:summary="등록된 키워드가 포함된 메시지는 채팅방 알림이 꺼져 있어도 푸쉬알림을 받게 되어 키워드는 강조되어 보입니다."
+                android:title="키워드 알림" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="소리알림">
+        <SwitchPreference
+            android:key="sound"
+            android:title="소리" />
+        <ListPreference
+            android:dependency="sound"
+            android:entries="@array/array_voice"
+            android:entryValues="@array/array_voice"
+            android:key="sound_List"
+            android:summary="카톡"
+            android:title="알림음" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="기타알림">
+        <EditTextPreference
+            android:title="Nickname 설정"
+            android:key="nickname"
+            android:summary="닉네임을 설정해주세요"
+            android:dialogTitle="Nickname 설정"/>
+        <PreferenceScreen
+            android:title="Another Activity 설정"
+            android:summary="그 외 액티비티 설정">
+            <intent android:targetPackage="com.doiloppa.preferencefragment_ex"
+                android:targetClass="com.doiloppa.preferencefragment_ex.AnotherActivity"/>
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

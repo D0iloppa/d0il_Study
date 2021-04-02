@@ -1,3 +1,5 @@
+include ':preferencefragment_ex'
+include ':viewpager_ex2'
 include ':doublefragment_ex'
 include ':singlefragment_ex'
 include ':playmusic_service'
