@@ -34,7 +34,6 @@ public class SettingPreferenceFragment extends PreferenceFragmentCompat {
 
             if (prfs.getBoolean("keyword", false))
                 keywordScreen.setSummary("사용");
-            else keywordScreen.setSummary("사용안함");
 
             if (!prfs.getString("nickname", "").equals(""))
                 editPreference.setSummary(prfs.getString("nickname", "닉네임을 설정해주세요"));
