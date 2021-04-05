@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/kkl_action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/kkl_action_hot_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_star_rate_24"
+        android:title="Pick"/>
+    <item
+        android:id="@+id/kkl_action_cart"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Cart"/>
+    <item
+        android:id="@+id/kkl_action_setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Setting"/>
+</menu>

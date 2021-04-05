@@ -1,3 +1,4 @@
+include ':preferencefragment_ex2'
 include ':viewpager_ex2'
 include ':doublefragment_ex'
 include ':singlefragment_ex'
