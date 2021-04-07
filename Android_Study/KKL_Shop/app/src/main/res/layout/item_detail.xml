@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--    프로필부분-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/detailViewitem_profile_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="7.5dp"
+            android:src="@drawable/kkl_logo" />
+
+        <TextView
+            android:id="@+id/detailViewitem_profile_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KwonKooLook" />
+    </LinearLayout>
+    <!--    이미지 부분-->
+    <ImageView
+        android:id="@+id/detailViewItem_imgView_content"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+    <!--좋아요,댓글-->
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/detailViewItem_favorite_img"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <ImageView
+            android:id="@+id/detailViewItem_comment_img"
+            android:src="@drawable/ic_baseline_chat_24"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/detailViewItem_favoritecounter_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like 0"/>
+    <TextView
+        android:id="@+id/detailViewItem_explain_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="댓글"/>
+    
+
+
+</LinearLayout>
