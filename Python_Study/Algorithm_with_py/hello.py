@@ -1,4 +1,5 @@
 
+
 # 아파트 배열 선언
 apartment = [[0 for col in range(14)] for row in range(14)]
 
