@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Algorithm_with_py.iml" filepath="$PROJECT_DIR$/.idea/Algorithm_with_py.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Overwatch_support/.idea/Overwatch_support.iml" filepath="$PROJECT_DIR$/../Overwatch_support/.idea/Overwatch_support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Toaureg/.idea/Toaureg.iml" filepath="$PROJECT_DIR$/../Toaureg/.idea/Toaureg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pythonProject1/.idea/macro_record.iml" filepath="$PROJECT_DIR$/../pythonProject1/.idea/macro_record.iml" />
+    </modules>
+  </component>
+</project>
