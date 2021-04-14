@@ -1,4 +1,4 @@
-package com.doiloppa.myapplication;
+package com.doiloppa.chap12;
 
 import org.junit.Test;
 
