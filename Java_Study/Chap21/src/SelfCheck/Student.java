@@ -32,8 +32,8 @@ public class Student {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		
-		return sNum + "\t|" + name + "\t|" + phone + "\t|" + e_Mail; 
+		return String.format("%-5s\t|%-5s\t|%s\t|%s",sNum,name,phone,e_Mail);
+//		return sNum + "\t|" + name + "\t\t|" + phone + "\t|" + e_Mail;
 	}
 	
 	

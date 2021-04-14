@@ -10,7 +10,7 @@ public class SelfCheck_02 {
 
 	public static void main(String[] args) {
 		
-		String bar = "학번\t|이름\t|전화번호\t\t|이메일\n----------------------------------------------------------";
+		String bar = "학번\t\t|이름\t\t|전화번호\t\t|이메일\n----------------------------------------------------------";
 		
 		Random random = new Random();
 		Scanner sc = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class SelfCheck_02 {
 		
 		HashMap<Integer,Student> hMap = new HashMap<>(); // 학번-학생 연결
 		
-		String[] names = {"아이유","블랙핑크","소녀시대","미노이","쁘걸스","권도일","방탄소년단"};
+		String[] names = {"아이유","블랙핑크","소녀시대","미노이","브레이브걸스","권도일","방탄소년단"};
 		String[] enames = {"iu","black_Pink","GirlsGen","Meenoi","brave_Girls","kdi3939","BTS"};
 		String[] emails = {"@naver.com","@hanmail.net","@gmail.com"};
 		
