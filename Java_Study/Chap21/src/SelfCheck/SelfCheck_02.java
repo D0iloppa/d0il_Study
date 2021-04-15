@@ -26,7 +26,9 @@ public class SelfCheck_02 {
 		
 		
 		for(int i=0;i<1000;i++) {
-			hMap.put(i+1000,new Student(i+1000,names[i%7],"010-"+(random.nextInt(9000)+1000)+"-"+(random.nextInt(9000)+1000),enames[i%7]+emails[i%3]));
+			hMap.put(i+1000,new Student(i+1000,names[i%7],
+					"010-"+(random.nextInt(9000)+1000)+"-"+(random.nextInt(9000)+1000),
+					enames[i%7]+emails[i%3]));
 		}
 		
 

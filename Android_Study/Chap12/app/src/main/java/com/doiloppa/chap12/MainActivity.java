@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void toggleFab() {
-        if (!isFabOpen) {
+        if (isFabOpen) {
             //fab 버튼이 클릭 되지 않았을 때, 서브버튼들의 y축을 0으로 설정해주고 이동
             ObjectAnimator.ofFloat(fab_Sub1, "translationY", 0f).start();
             ObjectAnimator.ofFloat(fab_Sub2, "translationY", 0f).start();
