@@ -27,7 +27,7 @@ public class SelfCheck_02 {
 		
 		for(int i=0;i<1000;i++) {
 			hMap.put(i+1000,new Student(i+1000,names[i%7],
-					"010-"+(random.nextInt(9000)+1000)+"-"+(random.nextInt(9000)+1000),
+					"010-"+random.nextInt(9)+random.nextInt(9)+random.nextInt(9)+random.nextInt(9)+"-"+random.nextInt(9)+random.nextInt(9)+random.nextInt(9)+random.nextInt(9),
 					enames[i%7]+emails[i%3]));
 		}
 		
@@ -56,11 +56,23 @@ public class SelfCheck_02 {
 		if(target==null)
 			System.out.println("해당 학번의 학생이 존재하지 않습니다.");
 		else 
-			System.out.println(target);	
+			System.out.println(target);
+
+
+
+
+		for(int i=0;i<1000;i++){
+			String str = "";
+			System.out.println(str.concat( ( i < 10 ? "00"+i : (i<100 ? "0"+i:""+i) ) ));
+		}
 		
 	
 			
 
 	}
+
+
+
+
 
 }

@@ -1,2 +1,4 @@
+include ':listview_simpleadapter'
+include ':listview_arrayadapter'
 include ':app'
 rootProject.name = "Chap13"
