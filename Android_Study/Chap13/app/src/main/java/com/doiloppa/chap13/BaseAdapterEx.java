@@ -22,8 +22,12 @@ public class BaseAdapterEx extends BaseAdapter {
 
     @Override
     public int getCount() {
+        // 데이터의 갯수를 알아야 그 만큼 리스트뷰를 할당하기 때문에
+        // 어뎁터 뷰에서 꼭 구현해야 하는 중요한 메소드
+        // 스피너 뷰에서도 사용을 한다.
         return mData.size();
     }
+
 
     @Override
     public Student getItem(int position) {
@@ -32,6 +36,7 @@ public class BaseAdapterEx extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
+        // 요소에 접근 할 수 있도록 꼭 구현해주어야 하는 메소드
         return position;
     }
 

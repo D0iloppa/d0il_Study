@@ -1,3 +1,7 @@
+include ':recycler_cardview'
+include ':recyclerview_ex'
+include ':selfchk'
+include ':listview_viewclass_Singer'
 include ':listview_simpleadapter'
 include ':listview_arrayadapter'
 include ':app'
