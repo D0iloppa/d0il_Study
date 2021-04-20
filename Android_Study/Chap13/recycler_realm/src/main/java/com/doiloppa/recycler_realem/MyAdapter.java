@@ -1,0 +1,53 @@
+package com.doiloppa.recycler_realem;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+import io.realm.RealmResults;
+
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
+
+    RealmResults<Member> mDataset; // 결과값의 집합
+
+    public MyAdapter(RealmResults<Member> mDataset) {
+        this.mDataset = mDataset;
+    }
+
+    @NonNull
+    @Override
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview, parent,false);
+        return new MyViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        holder.mName.setText(mDataset.get(position).getName());
+        holder.mAge.setText(mDataset.get(position).getAge()+"세"); // int형이므로 String으로 변환해줘야함
+        holder.mEmail.setText(mDataset.get(position).geteMail());
+    }
+
+    @Override
+    public int getItemCount() {
+        return mDataset.size();
+    }
+
+    class MyViewHolder extends RecyclerView.ViewHolder {
+        TextView mName,mAge,mEmail;
+
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            this.mName = itemView.findViewById(R.id.info_text);
+            this.mAge = itemView.findViewById(R.id.info_age);
+            this.mEmail = itemView.findViewById(R.id.info_email);
+        }
+    }
+}

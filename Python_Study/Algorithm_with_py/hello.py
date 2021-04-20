@@ -1,4 +1,142 @@
 
+#에라토스테네스의 체
+def prime_list(n):
+    # 에라토스테네스의 체 초기화: n개 요소에 True 설정(소수로 간주)
+    sieve = [True] * n
+
+    # n의 최대 약수가 sqrt(n) 이하이므로 i=sqrt(n)까지 검사
+    m = int(n ** 0.5)
+    for i in range(2, m + 1):
+        if sieve[i] == True:           # i가 소수인 경우
+            for j in range(i+i, n, i): # i이후 i의 배수들을 False 판정
+                sieve[j] = False
+
+    # 소수 목록 산출
+    return [i for i in range(2, n) if sieve[i] == True]
+
+m,n = input().split()
+m = int(m)
+n = int(n)
+
+arr = prime_list(n+1)
+for i in arr :
+    if(i>=m) : print(i)
+
+
+
+
+#베르트랑 공준
+
+
+while(True):
+    N = int(input())
+    if(N==0) : break
+    if(N==1) : print(1)
+    else :
+        x = len(prime_list(2*N)) - len(prime_list(N+1))
+        print(x)
+
+
+
+
+
+
+
+
+
+M = int(input())
+N = int(input())
+prime_Arr = []
+
+for number in range(M,N+1):
+    if(is_Prime(number)):prime_Arr.append(number)
+
+if(len(prime_Arr)==0) : print(-1) # 소수가 없으면 -1 출력
+else :
+    sum = 0
+    for i in prime_Arr: sum+=i
+    print(sum)
+    print(prime_Arr[0])
+
+
+
+
+
+#소인수분해
+
+
+
+
+def prime_Factorization(N): #소인수분해 함수
+    if N<2 : return
+    for i in range(2,N+1):
+        if(N%i==0) :
+            arr.append(i)
+            return prime_Factorization(N//i)
+
+n = int(input())
+arr = []
+
+prime_Factorization(n)
+for i in arr:
+    print(i)
+
+
+
+
+# 소수
+def is_Prime(N):
+    if(N<2) : return False # 2미만의 수는 무조건 소수가 아님
+
+    for  i in range(2,N): # 자기 자신 말고 약수(나누어떨어지는 수)가 존재한다면 소수가 아님
+        if(N%i == 0) : return False
+
+    return True
+
+
+M = int(input())
+N = int(input())
+prime_Arr = []
+
+for number in range(M,N+1):
+    if(is_Prime(number)):prime_Arr.append(number)
+
+if(len(prime_Arr)==0) : print(-1) # 소수가 없으면 -1 출력
+else :
+    sum = 0
+    for i in prime_Arr: sum+=i
+    print(sum)
+    print(prime_Arr[0])
+
+
+
+
+
+
+
+#소수판별
+
+def is_Prime(N):
+    if(N<2) : return False # 2미만의 수는 무조건 소수가 아님
+
+    for  i in range(2,N): # 자기 자신 말고 약수(나누어떨어지는 수)가 존재한다면 소수가 아님
+        if(N%i == 0) : return False
+
+    return True
+
+n = int(input())
+arr =[]
+arr = input().split()
+
+prime_Count = 0
+
+for i in range(n):
+    target = int(arr[i])
+    if is_Prime(target) : prime_Count+=1
+
+print(prime_Count)
+
+
 
 # 아파트 배열 선언
 apartment = [[0 for col in range(14)] for row in range(14)]

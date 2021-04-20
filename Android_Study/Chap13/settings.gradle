@@ -1,3 +1,4 @@
+include ':recycler_realm'
 include ':recycler_cardview'
 include ':recyclerview_ex'
 include ':selfchk'
