@@ -11,7 +11,6 @@ public class Member extends RealmObject {
     @Required // not null
     private String name,eMail,password;
     private int age;
-
     private String uri;
 
 

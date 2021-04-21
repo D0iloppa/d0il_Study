@@ -6,9 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -53,6 +56,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
             this.mAge = itemView.findViewById(R.id.info_age);
             this.mEmail = itemView.findViewById(R.id.info_email);
             this.mPhoto = itemView.findViewById(R.id.iv_Preview);
+
+            mPhoto.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Snackbar.make(v, "이름:"+mName.getText().toString() +" , 이메일:" + mEmail.getText().toString(), Snackbar.LENGTH_LONG).
+                            setAction("길게 누르면 창을 닫습니다.", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                        }
+                    }).show();
+
+
+                }
+            });
         }
     }
 }

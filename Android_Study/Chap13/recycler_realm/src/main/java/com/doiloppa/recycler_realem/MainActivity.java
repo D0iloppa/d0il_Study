@@ -1,5 +1,6 @@
 package com.doiloppa.recycler_realem;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +33,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     RecyclerView recyclerView;
     MyAdapter adapter;
 
+    Button btnLogin;
+
+    Boolean loginState,autoLogin;
+    String loginString;
+
 
 
     @Override
@@ -48,25 +55,55 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RealmConfiguration realmConfiguration = new RealmConfiguration.Builder().deleteRealmIfMigrationNeeded().build();
         Realm.setDefaultConfiguration(realmConfiguration);
 
+
+        SharedPreferences sharedPreferences = getSharedPreferences("login_sp",MODE_PRIVATE);
+        autoLogin = sharedPreferences.getBoolean("autoLogin",false);
+        loginState = sharedPreferences.getBoolean("loginState",false);
+
+
+        Toast.makeText(getApplicationContext(), autoLogin+","+loginState, Toast.LENGTH_SHORT).show();
+
+
+
+
+
         tvNotice = findViewById(R.id.tv_notice);
         Button btDelete = findViewById(R.id.bt_delete);
         btDelete.setOnClickListener(this);
         Button btJoin = findViewById(R.id.bt_join);
         btJoin.setOnClickListener(this);
-        Button btnLogin = findViewById(R.id.bt_login);
+        btnLogin = findViewById(R.id.bt_login);
         btnLogin.setOnClickListener(this);
 
+
+
+
+        if(autoLogin && loginState){
+            loginString = sharedPreferences.getString("loginString",loginString);
+            tvNotice.setText(loginString);
+            btnLogin.setText("로그아웃");
+        }
+
+
+
         recyclerView = findViewById(R.id.my_recycler_view);
+
 
         realm = Realm.getDefaultInstance(); // Realm 인스턴스 생성
         query = realm.where(Member.class); // 질의문이 다룰 테이블 설정
         results = query.findAll(); // 모든 데이터를 가져옴
         results.sort("id", Sort.DESCENDING); // Ascending은 기본값이기 때문에 적어주지 않아도 된다.
 
+
+
+
+
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
         adapter = new MyAdapter(results);
         recyclerView.setAdapter(adapter);
+
 
 
         // 질의 결과가 바뀌었을 때 Adapter에게 갱신을 요청
@@ -96,6 +133,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.bt_login:
+                if(loginState==true){
+                    tvNotice.setText("");
+                    Toast.makeText(getApplicationContext(), "로그아웃 하였습니다.", Toast.LENGTH_SHORT).show();
+                    btnLogin.setText("로그인");
+                    loginState = false;
+                    autoLogin = false;
+                    break;
+                }
                 intent = new Intent(this,LoginActivity.class);
                 startActivityForResult(intent,0);
                 break;
@@ -119,6 +164,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onDestroy();
         realm.removeAllChangeListeners(); //
         realm.close(); // 앱을 종료할 때, realm을 닫지 않으면 메모리상에 남아있게 된다.
+
+        SharedPreferences sharedPreferences = getSharedPreferences("login_sp",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("autoLogin",autoLogin);
+        editor.putBoolean("loginState",false);
+        if(autoLogin){
+            editor.putBoolean("loginState",loginState);
+            editor.putString("loginString",loginString);
+        }
+        editor.commit();
+
+
     }
 
 
@@ -130,10 +187,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(resultCode==RESULT_OK){ // 로그인 성공
                     String name = data.getStringExtra("Name");
                     String email = data.getStringExtra("eMail");
+                    autoLogin = data.getBooleanExtra("autoLogin",false);
+                    loginState = true;
                     tvNotice.setText(name+"("+email+")으로 로그인했습니다.");
+                    loginString = name + "(" + email + ")으로 로그인했습니다.";
+
+                    btnLogin.setText("로그아웃");
                 }else
                     Toast.makeText(getApplicationContext(), "취소", Toast.LENGTH_SHORT).show();
                 break;
         }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+//
+//        SharedPreferences sharedPreferences = getSharedPreferences("loginState",MODE_PRIVATE);
+//        SharedPreferences.Editor editor = sharedPreferences.edit();
+//        editor.putString("test","SharedPreferences 작동테스트");
+//        editor.putBoolean("loginState",loginState);
+//        editor.putBoolean("autoLogin",autoLogin);
+//        if(loginState) editor.putString("loginString",loginString);
+//        editor.commit();
+
+
+
     }
 }
