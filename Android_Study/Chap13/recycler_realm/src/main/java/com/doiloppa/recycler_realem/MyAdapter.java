@@ -57,17 +57,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
             this.mEmail = itemView.findViewById(R.id.info_email);
             this.mPhoto = itemView.findViewById(R.id.iv_Preview);
 
-            mPhoto.setOnClickListener(new View.OnClickListener() {
+//            mPhoto.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Snackbar.make(v, "이름:"+mName.getText().toString() +" , 이메일:" + mEmail.getText().toString(), Snackbar.LENGTH_LONG).show();
+//
+//
+//                }
+//            });
+
+            mPhoto.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
-                public void onClick(View v) {
-                    Snackbar.make(v, "이름:"+mName.getText().toString() +" , 이메일:" + mEmail.getText().toString(), Snackbar.LENGTH_LONG).
-                            setAction("길게 누르면 창을 닫습니다.", new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                        }
-                    }).show();
-
-
+                public boolean onLongClick(View v) {
+                    Snackbar.make(v, "이름:"+mName.getText().toString() +" , 이메일:" + mEmail.getText().toString(), Snackbar.LENGTH_LONG).show();
+                    return false;
                 }
             });
         }

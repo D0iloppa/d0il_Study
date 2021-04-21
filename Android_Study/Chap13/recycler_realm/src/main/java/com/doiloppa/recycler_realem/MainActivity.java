@@ -61,7 +61,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         loginState = sharedPreferences.getBoolean("loginState",false);
 
 
-        Toast.makeText(getApplicationContext(), autoLogin+","+loginState, Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(getApplicationContext(),autoLogin+","+loginState, Toast.LENGTH_SHORT).show();
 
 
 
@@ -137,10 +138,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     tvNotice.setText("");
                     Toast.makeText(getApplicationContext(), "로그아웃 하였습니다.", Toast.LENGTH_SHORT).show();
                     btnLogin.setText("로그인");
-                    loginState = false;
                     autoLogin = false;
+                    loginState = false;
                     break;
                 }
+
                 intent = new Intent(this,LoginActivity.class);
                 startActivityForResult(intent,0);
                 break;
@@ -159,25 +161,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        realm.removeAllChangeListeners(); //
-        realm.close(); // 앱을 종료할 때, realm을 닫지 않으면 메모리상에 남아있게 된다.
-
-        SharedPreferences sharedPreferences = getSharedPreferences("login_sp",MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putBoolean("autoLogin",autoLogin);
-        editor.putBoolean("loginState",false);
-        if(autoLogin){
-            editor.putBoolean("loginState",loginState);
-            editor.putString("loginString",loginString);
-        }
-        editor.commit();
-
-
-    }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -192,6 +175,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     tvNotice.setText(name+"("+email+")으로 로그인했습니다.");
                     loginString = name + "(" + email + ")으로 로그인했습니다.";
 
+                    Toast.makeText(getApplicationContext(), autoLogin+","+loginState, Toast.LENGTH_SHORT).show();
+
                     btnLogin.setText("로그아웃");
                 }else
                     Toast.makeText(getApplicationContext(), "취소", Toast.LENGTH_SHORT).show();
@@ -200,18 +185,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
-//
-//        SharedPreferences sharedPreferences = getSharedPreferences("loginState",MODE_PRIVATE);
-//        SharedPreferences.Editor editor = sharedPreferences.edit();
-//        editor.putString("test","SharedPreferences 작동테스트");
-//        editor.putBoolean("loginState",loginState);
-//        editor.putBoolean("autoLogin",autoLogin);
-//        if(loginState) editor.putString("loginString",loginString);
-//        editor.commit();
+    protected void onPause() {
+        super.onPause();
 
-
-
+        SharedPreferences sharedPreferences = getSharedPreferences("login_sp",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("loginState",false);
+        editor.putBoolean("autoLogin",false);
+        if(autoLogin){
+            editor.putBoolean("autoLogin",autoLogin);
+            editor.putBoolean("loginState",loginState);
+            editor.putString("loginString",loginString);
+        }
+        editor.commit();
     }
+
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        realm.removeAllChangeListeners(); //
+        realm.close(); // 앱을 종료할 때, realm을 닫지 않으면 메모리상에 남아있게 된다.
+
+        SharedPreferences sharedPreferences = getSharedPreferences("login_sp",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("loginState",false);
+        editor.putBoolean("autoLogin",false);
+        if(autoLogin){
+            editor.putBoolean("autoLogin",autoLogin);
+            editor.putBoolean("loginState",loginState);
+            editor.putString("loginString",loginString);
+        }
+        editor.commit();
+    }
+
 }
