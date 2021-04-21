@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        realm.removeAllChangeListeners(); //
         realm.close(); // 앱을 종료할 때, realm을 닫지 않으면 메모리상에 남아있게 된다.
     }
 
