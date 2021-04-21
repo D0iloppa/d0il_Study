@@ -12,7 +12,15 @@ public class Member extends RealmObject {
     private String name,eMail,password;
     private int age;
     private String uri;
+    boolean logined;
 
+    public boolean isLogined() {
+        return logined;
+    }
+
+    public void setLogined(boolean logined) {
+        this.logined = logined;
+    }
 
     // 게터 & 세터
     public int getId() {

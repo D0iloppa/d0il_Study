@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -33,10 +35,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     RecyclerView recyclerView;
     MyAdapter adapter;
 
+
     Button btnLogin;
 
     Boolean loginState,autoLogin;
-    String loginString;
+    String loginString,loginedID;
 
 
 
@@ -81,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if(autoLogin && loginState){
             loginString = sharedPreferences.getString("loginString",loginString);
+            loginedID = sharedPreferences.getString("loginedID",loginedID);
             tvNotice.setText(loginString);
             btnLogin.setText("로그아웃");
         }
@@ -88,6 +92,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         recyclerView = findViewById(R.id.my_recycler_view);
+
 
 
         realm = Realm.getDefaultInstance(); // Realm 인스턴스 생성
@@ -100,9 +105,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
-        adapter = new MyAdapter(results);
+        adapter = new MyAdapter(results,this);
         recyclerView.setAdapter(adapter);
 
 
@@ -135,11 +141,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_login:
                 if(loginState==true){
-                    tvNotice.setText("");
-                    Toast.makeText(getApplicationContext(), "로그아웃 하였습니다.", Toast.LENGTH_SHORT).show();
-                    btnLogin.setText("로그인");
-                    autoLogin = false;
-                    loginState = false;
+                    logOut();
                     break;
                 }
 
@@ -161,6 +163,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    public void logOut() {
+
+        results = query.equalTo("eMail",loginedID).findAll();
+
+        realm.executeTransactionAsync(new Realm.Transaction() {
+            @Override
+            public void execute(Realm realm) {
+                results.get(0).setLogined(false);
+            }
+        });
+
+        tvNotice.setText("");
+        Toast.makeText(getApplicationContext(), "로그아웃 하였습니다.", Toast.LENGTH_SHORT).show();
+        btnLogin.setText("로그인");
+        autoLogin = false;
+        loginState = false;
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -174,6 +194,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     loginState = true;
                     tvNotice.setText(name+"("+email+")으로 로그인했습니다.");
                     loginString = name + "(" + email + ")으로 로그인했습니다.";
+                    loginedID = email;
 
                     Toast.makeText(getApplicationContext(), autoLogin+","+loginState, Toast.LENGTH_SHORT).show();
 
@@ -196,6 +217,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putBoolean("autoLogin",autoLogin);
             editor.putBoolean("loginState",loginState);
             editor.putString("loginString",loginString);
+            editor.putString("loginedID",loginedID);
         }
         editor.commit();
     }
@@ -216,6 +238,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putBoolean("autoLogin",autoLogin);
             editor.putBoolean("loginState",loginState);
             editor.putString("loginString",loginString);
+            editor.putString("loginedID",loginedID);
         }
         editor.commit();
     }
