@@ -12,6 +12,8 @@ public class Member extends RealmObject {
     private String name,eMail,password;
     private int age;
 
+    private String uri;
+
 
     // 게터 & 세터
     public int getId() {
@@ -44,5 +46,13 @@ public class Member extends RealmObject {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public String getUri() {
+        return uri;
+    }
+    public void setUri(String uri) {
+        this.uri = uri;
+    }
+
 }
 

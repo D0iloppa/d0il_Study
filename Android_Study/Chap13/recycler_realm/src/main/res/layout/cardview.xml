@@ -14,10 +14,12 @@
         card_view:cardCornerRadius="4dp">
 
         <ImageView
-            android:id="@+id/iv_photo"
+            android:id="@+id/iv_Preview"
             android:src="@mipmap/ic_launcher"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
 
         <LinearLayout
             android:padding="16dp"

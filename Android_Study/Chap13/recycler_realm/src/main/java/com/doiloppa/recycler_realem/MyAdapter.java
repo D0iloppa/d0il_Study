@@ -1,8 +1,10 @@
 package com.doiloppa.recycler_realem;
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,6 +35,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
         holder.mName.setText(mDataset.get(position).getName());
         holder.mAge.setText(mDataset.get(position).getAge()+"세"); // int형이므로 String으로 변환해줘야함
         holder.mEmail.setText(mDataset.get(position).geteMail());
+        holder.mPhoto.setImageURI(Uri.parse(mDataset.get(position).getUri()));
     }
 
     @Override
@@ -42,12 +45,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
 
     class MyViewHolder extends RecyclerView.ViewHolder {
         TextView mName,mAge,mEmail;
+        ImageView mPhoto;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             this.mName = itemView.findViewById(R.id.info_text);
             this.mAge = itemView.findViewById(R.id.info_age);
             this.mEmail = itemView.findViewById(R.id.info_email);
+            this.mPhoto = itemView.findViewById(R.id.iv_Preview);
         }
     }
 }
