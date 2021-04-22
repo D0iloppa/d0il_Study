@@ -50,15 +50,6 @@ public class LoginActivity extends AppCompatActivity {
                     if(results.get(0).getPassword().equals(etPassword.getText().toString())){
 
 
-
-                        realm.executeTransactionAsync(new Realm.Transaction() {
-                            @Override
-                            public void execute(Realm realm) {
-                                Member member = results.get(0);
-                                member.setLogined(true);
-                            }
-                        });
-
                         Intent intent = new Intent();
                         intent.putExtra("Name",results.get(0).getName());
                         intent.putExtra("eMail",results.get(0).geteMail());

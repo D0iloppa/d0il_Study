@@ -61,10 +61,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
                         @Override
                         public void execute(Realm realm) {
                             Member member = realm.where(Member.class).findAll().get(mPosition);
-                            if(member!=null){
-                                if(member.isLogined()) mainActivity.logOut();
+                            if(member!=null)
                                 member.deleteFromRealm(); // 삭제
-                            }
                             return;
                         }
                     });
