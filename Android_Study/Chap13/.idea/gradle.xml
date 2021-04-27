@@ -12,11 +12,15 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appbarlayout_ex" />
+            <option value="$PROJECT_DIR$/bottomsheet_ex" />
             <option value="$PROJECT_DIR$/listview_arrayadapter" />
             <option value="$PROJECT_DIR$/listview_simpleadapter" />
             <option value="$PROJECT_DIR$/listview_viewclass_Singer" />
+            <option value="$PROJECT_DIR$/navigationdrawer_ex" />
             <option value="$PROJECT_DIR$/recycler_cardview" />
             <option value="$PROJECT_DIR$/recycler_realm" />
+            <option value="$PROJECT_DIR$/recycler_stagger" />
             <option value="$PROJECT_DIR$/recyclerview_ex" />
             <option value="$PROJECT_DIR$/selfchk" />
           </set>

@@ -1,3 +1,7 @@
+include ':navigationdrawer_ex'
+include ':bottomsheet_ex'
+include ':appbarlayout_ex'
+include ':recycler_stagger'
 include ':recycler_realm'
 include ':recycler_cardview'
 include ':recyclerview_ex'

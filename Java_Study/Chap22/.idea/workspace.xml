@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="23537720-a2f6-40b4-b01e-e4358f5ba36b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/androidTest/java/com/doiloppa/appbarlayout_ex/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/java/com/doiloppa/appbarlayout_ex/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/java/com/doiloppa/appbarlayout_ex/MyAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/java/com/doiloppa/appbarlayout_ex/MyItemDecoration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/drawable/android.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/drawable/appbar_image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/drawable/ic_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/appbarlayout_ex/src/test/java/com/doiloppa/appbarlayout_ex/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/androidTest/java/com/doiloppa/bottomsheet_ex/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/java/com/doiloppa/bottomsheet_ex/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/java/com/doiloppa/bottomsheet_ex/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/java/com/doiloppa/bottomsheet_ex/MyAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/drawable/ic_lab4_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/drawable/ic_lab4_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/drawable/ic_lab4_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/drawable/ic_lab4_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/layout/item_modal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/layout/layout_recycler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/bottomsheet_ex/src/test/java/com/doiloppa/bottomsheet_ex/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/androidTest/java/com/doiloppa/navigationdrawer_ex/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/java/com/doiloppa/navigationdrawer_ex/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/navigationdrawer_ex/src/test/java/com/doiloppa/navigationdrawer_ex/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/androidTest/java/com/doiloppa/recycler_stagger/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/java/com/doiloppa/recycler_stagger/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/java/com/doiloppa/recycler_stagger/ItemAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/java/com/doiloppa/recycler_stagger/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/drawable/pic_001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/drawable/pic_002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/drawable/pic_003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/drawable/pic_004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/drawable/pic_005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/drawable/pic_006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/layout/cardview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/recycler_stagger/src/test/java/com/doiloppa/recycler_stagger/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_Study/Chap13/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_Study/Chap13/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_Study/Chap13/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chap21/src/SelfCheck/SelfCheck_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap21/src/SelfCheck/SelfCheck_02.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1rjRJJIQOm2U3V5DD4N76OR2QJE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Chap21" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Github\d0il_Study\Java_Study\Chap22" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23537720-a2f6-40b4-b01e-e4358f5ba36b" name="Default Changelist" comment="" />
+      <created>1619487440480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619487440480</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
