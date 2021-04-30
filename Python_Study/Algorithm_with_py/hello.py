@@ -38,7 +38,14 @@ while(True):
 
 
 
+# 소수
+def is_Prime(N):
+    if(N<2) : return False # 2미만의 수는 무조건 소수가 아님
 
+    for  i in range(2,N): # 자기 자신 말고 약수(나누어떨어지는 수)가 존재한다면 소수가 아님
+        if(N%i == 0) : return False
+
+    return True
 
 
 

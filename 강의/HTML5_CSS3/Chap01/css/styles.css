@@ -1,0 +1,28 @@
+h1{
+    /* 이곳에 효과를 적용해놓으면 h1에 모두 효과가 들어간다.
+    따로따로 적용할때는 클래스와 아이디를 이용해야 함 */
+    font-size: 64px;
+    color:LightCyan;
+    text-align: center;
+}
+h2{ color:#e71dbc; }
+h3{ margin: top 100px;}
+p i{ /*p안에 있는 i태그에 속성적용*/
+   font-size: 64px; }
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   /* 아이디는 단 하나의 요소만 지정 가능 */
+   #best-text{ /* # 키워드는 id설정 */
+       color:orange;
+   }
+
+   /* 여러 요소를 스타일링 하고 싶을때 이용. 중복 클래스,여러 클래스 가능하고 띄어쓰기로 구분함 */
+   .centered-text{ /* . 키워드는 클래스 설정 */
+
+   }
+   .big-blue-text{ /* 클래스 설정*/
+
+   }

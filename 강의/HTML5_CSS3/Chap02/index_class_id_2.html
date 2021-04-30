@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Website</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	
+	.big-blue-text {
+		font-size: 64px;
+		color: blue;
+	}
+	/*여러 요소를 스타일링 하고 싶으면? class
+	중복 클래스 가능, 여러 클래스 가능 */
+	.centered-text{
+		text-align: center;
+	}
+
+	/*한 요소만 스타일링 하고 싶으면? id
+	중복 아이디 불가능, 여러 아이디 불가능 */
+	#best-text{
+		color: orange;
+	}
+
+
+</style>
+</head>
+
+<body>
+	<h1 class="centered-text">Heading 1</h1>
+	<h2 class="big-blue-text centered-text">Heading 2</h2>
+	
+	<p id="best-text"> 첫번째 문단</p>
+	<p> 두번째 문단</p>
+	<p class="big-blue-text"> 세번째 문단</p>
+	<p> 네번째 문단</p>
+
+</body>
+</html>

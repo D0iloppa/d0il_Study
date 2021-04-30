@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 알트+b를 누르면  브라우저로 확인가능 -->
+<!-- 크롬 브라우저는 웹 표준을 잘 지키는 편이므로 기본 브라우저는 크롬이 좋다. -->
+
+<html>
+    <!-- 머릿말 영역 -->
+    <head>
+        <title> My First Website </title>
+        <!-- 메타 태그로 utf-8 인코딩 해주지 않으면 익스플로러에서는 한글이 깨진다. -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/styles">
+        
+        <!-- CSS 코드 -->
+        <!-- <style type="text/css">
+            /* 태그들이 담고 있는 요소들에 효과를 주도록 한다. */
+            h1{
+                /* 이곳에 효과를 적용해놓으면 h1에 모두 효과가 들어간다.
+                따로따로 적용할때는 클래스와 아이디를 이용해야 함 */
+                font-size: 64px;
+                color:LightCyan;
+                text-align: center;
+            }
+            h2{ color:#e71dbc; }
+            h3{ margin: top 100px;}
+           p i{ /*p안에 있는 i태그에 속성적용*/
+               font-size: 64px; }
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+               }
+               /* 아이디는 단 하나의 요소만 지정 가능 */
+               #best-text{ /* # 키워드는 id설정 */
+                   color:orange;
+               }
+
+               /* 여러 요소를 스타일링 하고 싶을때 이용. 중복 클래스,여러 클래스 가능하고 띄어쓰기로 구분함 */
+               .centered-text{ /* . 키워드는 클래스 설정 */
+
+               }
+               .big-blue-text{ /* 클래스 설정*/
+
+               }
+
+           </style> -->
+
+
+        <p id=best-text> 여기에 쓰면 무슨129 </p>
+
+    </head>
+    
+    <!-- 본문 영역 -->
+    <body style="background-color:#73cc73">
+        <!-- headline -->
+        <h1> My First Page</h1>
+        <h2>I <i>Love</i> HTML</h2>
+        <h3>안녕 세상!</h3>
+    
+        <!-- paragraph -->
+        <p class="centered-text big-blue-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec convallis massa. Sed sagittis vehicula quam, at hendrerit leo semper non. Nulla facilisi. Nam neque eros, dictum facilisis fringilla eu, aliquam quis dolor. </p>
+        <p>Nullam ultricies odio et lectus molestie varius. Vestibulum <i>Vestibulum</i> viverra aliquam. Nulla sem quam, condimentum quis nibh in, hendrerit malesuada mauris.</p>
+        <img src="https://i1.sndcdn.com/artworks-D6f23XpQeQ8OqRT1-zj2BlQ-t500x500.jpg" width="300">
+        <img src="images/meenoi.jpg" width="300"><br>
+        <a href="https://google.com" target="_blank">구글</a>
+        <a href="folder1/page1.html">page1</a>
+        <a href="folder1/folder2/page2.html">page2</a>
+        <a href="folder1/folder2/page3.html">page3</a>
+
+        
+    </body>
+</html>

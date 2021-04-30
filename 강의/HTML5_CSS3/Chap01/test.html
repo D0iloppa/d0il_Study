@@ -1,0 +1,55 @@
+
+
+<script>
+    $(function(){setViewportBtn('#474242', '#fff');})
+    
+  var setViewportBtn = function(color, background_color){
+      var $last_section = $('body');
+      var viewport_mode = getCookie('viewport_mode');
+      if($('#doz_footer').length > 0){
+          $last_section = $('#doz_footer .footer-section .inside');
+      }else{
+          if(viewport_mode === 'PC'){
+              var $pc_section = $('div[doz_type=section][doz_mobile_section=N]');
+              if($pc_section.length > 0){
+                  var $pc_section_last = $($pc_section[$pc_section.length - 1]);
+                  if($pc_section_last.hasClass('visual_section')){
+                      $last_section = $pc_section_last;
+                  }else{
+                      var $pc_section_last_inside = $pc_section_last.find('div[doz_type=inside], div[doz_type=row]');
+                      $last_section = $($pc_section_last_inside[$pc_section_last_inside.length - 1]);
+                  }
+              }
+          }else{
+              var $mobile_show_section = $('div[doz_type=section][doz_mobile_hide=N]');
+              if($mobile_show_section.length > 0){
+                  var $mobile_show_section_last = $($mobile_show_section[$mobile_show_section.length - 1]);
+                  if($mobile_show_section_last.hasClass('visual_section')){
+                      $last_section = $mobile_show_section_last;
+                  }else{
+                      var $mobile_show_section_last_inside = $mobile_show_section_last.find('div[doz_type=inside], div[doz_type=row]');
+                      $last_section = $($mobile_show_section_last_inside[$mobile_show_section_last_inside.length - 1]);
+                  }
+              }
+          }
+      }
+      if(viewport_mode === 'PC'){
+          var pc_mode_str = getLocalizeString('타이틀_모바일모드로보기', '', '모바일 모드로 보기');
+      }else{
+          var pc_mode_str = getLocalizeString('타이틀_PC모드로보기', '', 'PC 모드로 보기');
+      }
+      var border_color = tinycolor(color).setAlpha(tinycolor(color).getAlpha() * 0.2).toRgbString();
+      $last_section.append('<div class="pc_mode_btn_wrap"><btn class="btn btn-default pc_mode_btn _pc_mode_btn" onclick="SITE.toggleViewport();" style="color: ' + color + '; background-color: ' + background_color + '; border: 1px solid ' + border_color + '">' + pc_mode_str + '</btn></div>');
+  };
+  
+  var toggleViewport = function(){
+      var viewport_mode = getCookie('viewport_mode');
+      if(viewport_mode === 'PC'){
+          setCookie('viewport_mode', 'm');
+      }else{
+          setCookie('viewport_mode', 'PC');
+      }
+      location.href = location.search;
+  };
+  
+  </script>

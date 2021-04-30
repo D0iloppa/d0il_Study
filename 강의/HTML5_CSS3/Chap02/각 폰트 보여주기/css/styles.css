@@ -1,0 +1,25 @@
+body{
+    font-size: 30px;
+}
+#Serif{
+    font-family: 'Times New Roman', Times, serif
+}
+#Sans-Serif{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Monospace{
+    font-family: 'Courier New', Courier, monospace;
+}
+#Cursive{
+    font-family: 'Comic Sans MS', cursive;
+}
+#Fantasy{
+    font-family: Impact, Haettenschweiler;
+}
+@font-face {
+    font-family: Google;
+    src: url(../../fonts/DungGeunMo.ttf);
+}
+#Google{
+    font-family: Google;
+}
