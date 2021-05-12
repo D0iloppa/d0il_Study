@@ -1,0 +1,44 @@
+/* .p1{
+    border: 1px solid blue;
+    max-width: 1000px;
+}
+
+.p2{
+    border: 1px solid red;
+
+}
+.p3{
+    border: 1px solid green;
+    min-width: 700px;
+}
+.p4{
+    border: 1px solid hotpink;
+    min-width: 200px;
+}
+
+.p5{
+    border: 0 solid yellow;
+    background-color: teal;
+    width: 200px;
+    height: 200px;
+    overflow:auto;
+} */
+
+.p1{
+    border: 2px solid #4d9fff;
+}
+
+.p2{
+    border: 2px dotted #4d9fff;
+}
+
+.p3{
+    border: 2px dashed #4d9fff;
+}
+
+.p4{
+}
+
+.p5{
+    border: 2px dotted red;
+}

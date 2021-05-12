@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+}
+body{
+    font-family:"jua";
+    background:#F0E8D9;
+    text-align:center;
+    color:#58595B;
+}
+.title{
+    margin-top:75px;
+    font-size:64px;
+}
+.sub{
+    margin-top:30px;
+    margin-bottom:75px;
+    font-size:32px;
+    
+}
+
+
+.col{
+    width: 620px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+.clearfix{
+    clear: left;
+}
+@font-face{
+    src: url("../fonts/BMJUA_otf.otf");
+    font-family:"jua";
+}
+.menu{
+    text-align:center;
+    margin-top:0;
+    margin-bottom:50px;
+    width:300px;
+    border-radius:10px;
+    background:white;   
+    float: left; 
+    margin-left: 10px;
+}
+.img_menu{
+    width:100%;
+    height:200px;
+    border-radius:10px 10px 0px 0px;
+}
+.menu_title{
+    padding-top:20px;
+    font-size:32px;
+}
+.menu_content{
+    margin-top:20px;
+    margin-bottom:16px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align:left;    
+}
+a{
+    display:block;
+    margin: 0 auto;    
+    text-decoration:none;
+    color:#0000EE;
+    padding-bottom:20px;
+}

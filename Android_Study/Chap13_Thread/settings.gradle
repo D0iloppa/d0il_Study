@@ -1,0 +1,9 @@
+include ':thread_race_ex'
+include ':thread_dog'
+include ':asynctask_oddeven'
+include ':asynctask_timer'
+include ':asynctask_ex'
+include ':looper_ex'
+include ':timerthread'
+include ':app'
+rootProject.name = "Chap13_Thread"

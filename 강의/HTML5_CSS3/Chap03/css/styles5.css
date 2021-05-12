@@ -1,0 +1,10 @@
+.div1{
+    border: 5px solid green;
+    height: 500px;
+    background-image: url(../images/twice01.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    /*어떤 부분을 자를지 결정*/
+    background-position: center center;
+
+}

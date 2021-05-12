@@ -11,13 +11,13 @@ public class BeepPrint_Ex {
 //        Thread beepThread = new Thread(new BeepPrint()); // 스레드 안에는 runnable 객체가 들어가야한다.
         beepThread.start();
 
-
 /*
+
 
         Thread thread= new Thread( new Runnable() { // Runnable 익명 내부 클래스
             @Override
             public void run() {
-                Toolkit toolkit = Toolkit.getDefaultToolkit(); // 컴퓨터 시스템의 소리를 출력해주는 클레스
+                Toolkit toolkit = Toolkit.getDefaultToolkit(); // 컴퓨터 시스템의 소리를 출력해주는 클래스
                 System.out.println();
 
 

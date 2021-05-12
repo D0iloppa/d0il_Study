@@ -1,0 +1,11 @@
+/* 원본 CSS 코드 */
+h2{
+  font-size: 30px;
+  padding: 20px;
+}
+.box-odd h2 {
+  background: #FA987D;
+}
+.box-even h2 {
+  background: #72CCA7;
+}

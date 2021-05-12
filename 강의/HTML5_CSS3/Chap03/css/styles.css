@@ -1,0 +1,6 @@
+p{
+    border: 1px solid blue;
+    padding: 50px 100px;
+    width: 500px;
+    margin: 100px auto; /*상하 공통값 좌우 공통값*/
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Float</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+  	body{
+		
+  		margin: 0px;
+  	}
+  	.col{
+  		height: 200px;
+		float:left;
+  	}
+  	.col-1{
+  		width: 200px;
+  	}
+  	.col-2{
+  		width: 400px;
+  	}
+  	.col-3{
+  		width: 600px;
+  	}
+
+/* 
+	  #div2{
+		  왼쪽에 떠있는 요소가 없도록 해주는 기능
+		  clear: left;
+	  } */
+
+	  .grid{
+		  border: 2px solid black;
+	  }
+
+	  .clearfix{
+		  clear:left;
+	  }
+
+
+
+  </style>
+ </head>
+<body>
+	<div class="grid">
+		<div id="div1" class= "col col-1" style="background-color: blue;"></div>
+		<div id="div2" class= "col col-1" style="background-color: green;"></div>
+		<div id="div3" class= "col col-1" style="background-color: yellow;"></div>
+		<div id="div4" class= "col col-1" style="background-color: orange;"></div>
+		<div id="div5" class= "col col-2" style="background-color: purple;"></div>
+		<div id="div6" class= "col col-3" style="background-color: pink;"></div>
+		<div id="div7" class= "col col-2" style="background-color: gray;"></div>
+		<div class="clearfix"></div>
+	</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec enim id felis consequat malesuada vitae auctor justo. Nulla in interdum turpis. Fusce sed arcu fermentum, sollicitudin justo eu, ornare ligula. Pellentesque nec lorem dui. Quisque eleifend augue feugiat justo vulputate tristique quis quis libero. Mauris tincidunt libero quis nisl posuere, id mollis nisl mollis. Suspendisse vitae augue sed mi commodo placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vitae sem nec nulla dictum tincidunt. Aliquam non tortor at augue venenatis ultricies. Curabitur ac elit quis augue aliquet tristique. Sed tristique feugiat felis sed molestie.</p>
+</body>
+</html>
