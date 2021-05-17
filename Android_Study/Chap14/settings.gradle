@@ -1,2 +1,5 @@
+include ':mission_0514'
+include ':sdcard_ex'
+include ':mydiary'
 include ':app'
 rootProject.name = "Chap14"

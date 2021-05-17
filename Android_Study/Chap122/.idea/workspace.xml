@@ -24,7 +24,63 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa6f36eb-92f9-4063-bfeb-de59861928e0" name="Default Changelist" comment="" />
+    <list default="true" id="aa6f36eb-92f9-4063-bfeb-de59861928e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/androidTest/java/com/doiloppa/mydiary/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/java/com/doiloppa/mydiary/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/drawable/note.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/mydiary/src/test/java/com/doiloppa/mydiary/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/androidTest/java/com/doiloppa/sdcard_ex/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/java/com/doiloppa/sdcard_ex/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Chap14/sdcard_ex/src/test/java/com/doiloppa/sdcard_ex/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chap14/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap14/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chap14/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap14/settings.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,9 +113,7 @@
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Chap12.app" />
@@ -114,9 +168,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -142,11 +194,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="579" y="189" key="FileChooserDialogImpl" timestamp="1618363764186">
+    <state x="579" y="189" key="FileChooserDialogImpl" timestamp="1620873287939">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state x="579" y="189" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1618363764186" />
+    <state x="579" y="189" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1620873287939" />
   </component>
 </project>
