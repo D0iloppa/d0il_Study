@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:onClick="onWrite"
-            android:text="파일 쓰기" />
+            android:text="서버 쓰기" />
 
         <Button
             android:id="@+id/btnRead"
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:onClick="onRead"
-            android:text="파일 읽기" />
+            android:text="서버 읽기" />
     </LinearLayout>
 
 </LinearLayout>
