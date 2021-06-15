@@ -5,7 +5,10 @@ import java.util.Arrays;
 public class WildCard_Ex {
 
 	public static void main(String[] args) {
-		
+
+
+
+
 		Course<Person> personCourse = new Course<Person>("일반인과정",5);
 		personCourse.add(new Person("일반인"));
 		personCourse.add(new Worker("직장인"));
@@ -13,7 +16,7 @@ public class WildCard_Ex {
 		personCourse.add(new HighStudent("고등학생"));
 		
 		Course<Worker> personCourse2 = new Course<>("직장인과정",5);
-		personCourse2.add(new Worker("직장인"));		
+		personCourse2.add(new Worker("직장인"));
 		
 		
 		Course<Student> personCourse3 = new Course<>("학생과정",5);

@@ -1,0 +1,6 @@
+include ':myalbum'
+include ':googlemap'
+include ':location'
+include ':videorecord'
+include ':app'
+rootProject.name = "Multimedia"

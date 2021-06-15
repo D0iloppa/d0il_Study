@@ -1,0 +1,156 @@
+{
+  "project_info": {
+    "project_number": "420099631544",
+    "firebase_url": "https://fir-2021-e41df-default-rtdb.firebaseio.com",
+    "project_id": "fir-2021-e41df",
+    "storage_bucket": "fir-2021-e41df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420099631544:android:5e179c1e4b16e1f0fd474d",
+        "android_client_info": {
+          "package_name": "com.doiloppa.chap_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420099631544-udpvt2j301ks6rh5ikv0p6c2n3onurre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrUHOBQPa1meiOQXHWfcygfGBSken9HK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420099631544-udpvt2j301ks6rh5ikv0p6c2n3onurre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420099631544:android:a796010dffef37d3fd474d",
+        "android_client_info": {
+          "package_name": "com.doiloppa.firebase_authentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420099631544-udpvt2j301ks6rh5ikv0p6c2n3onurre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrUHOBQPa1meiOQXHWfcygfGBSken9HK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420099631544-udpvt2j301ks6rh5ikv0p6c2n3onurre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420099631544:android:014a4c6277aa40a1fd474d",
+        "android_client_info": {
+          "package_name": "com.doiloppa.firestorage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420099631544-udpvt2j301ks6rh5ikv0p6c2n3onurre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrUHOBQPa1meiOQXHWfcygfGBSken9HK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420099631544-udpvt2j301ks6rh5ikv0p6c2n3onurre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420099631544:android:45da9f57ae5cc160fd474d",
+        "android_client_info": {
+          "package_name": "com.doiloppa.firestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420099631544-udpvt2j301ks6rh5ikv0p6c2n3onurre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrUHOBQPa1meiOQXHWfcygfGBSken9HK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420099631544-udpvt2j301ks6rh5ikv0p6c2n3onurre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420099631544:android:d0ddbd06e500d220fd474d",
+        "android_client_info": {
+          "package_name": "com.doiloppa.realtime_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420099631544-udpvt2j301ks6rh5ikv0p6c2n3onurre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrUHOBQPa1meiOQXHWfcygfGBSken9HK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420099631544-udpvt2j301ks6rh5ikv0p6c2n3onurre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

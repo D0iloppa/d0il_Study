@@ -9,5 +9,6 @@
     <orderEntry type="module" module-name="Toaureg" />
     <orderEntry type="module" module-name="macro_record" />
     <orderEntry type="module" module-name="Overwatch_support" />
+    <orderEntry type="module" module-name="인스타그램 봇" />
   </component>
 </module>

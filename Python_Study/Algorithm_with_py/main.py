@@ -1,3 +1,26 @@
+print("====================================")
+print("입력한 숫자들의 평균 구하기")
+print()
+
+n = int(input("입력할 숫자의 개수를 입력하세요: "))
+
+print()
+
+total = 0
+
+
+i=0
+while(i<n):
+    a = float(input(str(i + 1) + "번째 숫자: "))
+    total += a
+    i+=1
+
+print()
+ave = total / n
+print("평균: %.2f" % ave)
+
+
+
 # This is a sample Python script.
 
 # Press Shift+F10 to execute it or replace it with your code.

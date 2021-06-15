@@ -4,6 +4,8 @@ public class Course<T> {
 	
 	String name;
 	T[] student;
+
+
 	
 	public Course(String name, int size) {
 		super();

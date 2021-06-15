@@ -10,6 +10,7 @@ public class Client_Ex {
         BufferedWriter out = null;
         Socket socket = null;
 
+
         try {
             socket = new Socket("localhost", 9999); // 클라이언트 소켓 생성
             in = new BufferedReader(new InputStreamReader(socket.getInputStream())); // 서버로부터의 입력 스트림
