@@ -1,0 +1,60 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "pytest: 현재 파일",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "pytest",
+        "args": [
+          "${file}",
+          "-v",
+          "-s",
+          "--tb=short"
+        ],
+        "console": "integratedTerminal",
+        "justMyCode": false,
+        "cwd": "${workspaceFolder}"
+      },
+      {
+        "name": "pytest: 특정 문제번호",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "pytest",
+        "args": [
+          "tests/test_problem.py",
+          "-k",
+          "1011",  // ← 여기 문제번호 바꾸면 됨
+          "-v",
+          "-s",
+          "--tb=short"
+        ],
+        "console": "integratedTerminal",
+        "justMyCode": false,
+        "cwd": "${workspaceFolder}"
+      },
+      {
+        "name": "pytest: 전체 실행",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "pytest",
+        "args": [
+          "tests/",
+          "-v",
+          "--tb=short"
+        ],
+        "console": "integratedTerminal",
+        "justMyCode": false,
+        "cwd": "${workspaceFolder}"
+      },
+      {
+        "name": "Python: 현재 문제 직접 실행",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "cwd": "${workspaceFolder}"
+      }
+    ]
+  }
